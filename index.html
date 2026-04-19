@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shafwan's — Premium Collection</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Shafwan<span>'s</span></a>
+  <ul class="nav-links">
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#" id="adminLink">Admin</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="cart-btn" id="cartBtn">Cart <span class="cart-count" id="cartCount">0</span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grain"></div>
+  <svg class="hero-tshirt" width="400" height="440" viewBox="0 0 400 440" fill="none">
+    <path d="M120 20 L0 100 L60 130 L60 420 L340 420 L340 130 L400 100 L280 20 L240 60 C240 80 160 80 160 60 Z" fill="#f5f0e8" stroke="none"/>
+  </svg>
+  <p class="hero-eyebrow">Crafted in Bangladesh • Est. 2026</p>
+  <h1 class="hero-title">Wear<br><span class="italic">Your</span> <span class="outline">Story</span></h1>
+  <p class="hero-sub">Premium tees designed for those who refuse to blend in. Every stitch, every print — an expression.</p>
+  <div class="hero-cta">
+    <a href="#shop" class="btn-primary">Shop Now</a>
+    <a href="#about" class="btn-outline">Our Story</a>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item">Premium Quality <span class="dot">✦</span></span>
+    <span class="marquee-item">Free Shipping Over ৳999 <span class="dot">✦</span></span>
+    <span class="marquee-item">100% Cotton <span class="dot">✦</span></span>
+    <span class="marquee-item">Shafwan's Originals <span class="dot">✦</span></span>
+    <span class="marquee-item">Wear Your Story <span class="dot">✦</span></span>
+    <span class="marquee-item">Made with Passion <span class="dot">✦</span></span>
+    <span class="marquee-item">Premium Quality <span class="dot">✦</span></span>
+    <span class="marquee-item">Free Shipping Over ৳999 <span class="dot">✦</span></span>
+    <span class="marquee-item">100% Cotton <span class="dot">✦</span></span>
+    <span class="marquee-item">Shafwan's Originals <span class="dot">✦</span></span>
+    <span class="marquee-item">Wear Your Story <span class="dot">✦</span></span>
+    <span class="marquee-item">Made with Passion <span class="dot">✦</span></span>
+  </div>
+</div>
+
+<!-- SHOP -->
+<section id="shop">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-eyebrow">Our Collection</p>
+      <h2 class="section-title">The <em>Drop</em></h2>
+    </div>
+    <p style="max-width:280px;font-size:0.9rem;line-height:1.8;opacity:0.55;font-weight:300;">Carefully curated pieces. Limited runs. Yours forever.</p>
+  </div>
+  <div class="category-tabs" id="categoryTabs"></div>
+  <div class="products-grid" id="productsGrid"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-visual reveal">
+    <div class="about-box about-box-1">
+      <svg width="200" height="230" viewBox="0 0 200 230" fill="none">
+        <path d="M60 10 L0 52 L30 67 L30 220 L170 220 L170 67 L200 52 L140 10 L120 32 C120 44 80 44 80 32 Z" fill="#2a2520" stroke="rgba(245,240,232,0.15)" stroke-width="1.5"/>
+        <text x="100" y="140" text-anchor="middle" fill="rgba(245,240,232,0.6)" font-family="Playfair Display, serif" font-size="14" font-style="italic">Shafwan's</text>
+        <circle cx="100" cy="115" r="20" fill="none" stroke="rgba(201,75,42,0.6)" stroke-width="1"/>
+        <text x="100" y="120" text-anchor="middle" fill="#c94b2a" font-family="Space Mono, monospace" font-size="9">S</text>
+      </svg>
+    </div>
+    <div class="about-stats"><span class="num">500+</span><span class="label">Happy Customers</span></div>
+    <div class="about-box-2">Since 2026</div>
+  </div>
+  <div class="about-text reveal">
+    <p class="section-eyebrow">Our Story</p>
+    <h2 class="section-title">Born from<br><em>Bold</em> Ideas</h2>
+    <p>Shafwan's started as a sketch on a notebook — a dream to create tees that say something without a word. We're from Bangladesh, and we're proud of it. Every piece is crafted with intention, printed with precision, and built to last.</p>
+    <p>We don't follow trends. We set them. Each drop is limited, each design is original. When you wear Shafwan's, you wear a statement.</p>
+    <div style="margin-top:40px;"><a href="#shop" class="btn-primary" style="display:inline-block;">Explore Collection</a></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo">Shafwan<span>'s</span></span>
+      <p>Premium tees for those who dare to express. Based in Bangladesh, worn worldwide.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="#hero">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Size Guide</a>
+      <a href="#">Shipping Policy</a>
+      <a href="#">Returns</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Shafwan's. All rights reserved.</span>
+    <span>Made with ♥ in Bangladesh</span>
+  </div>
+</footer>
+
+<!-- ═══════ ORDER MODAL ═══════ -->
+<div class="modal-overlay" id="orderModal">
+  <div class="modal">
+    <button class="modal-close" id="closeOrderModal">✕</button>
+    <h2>Place Order</h2>
+    <p class="subtitle" id="orderModalSubtitle">Complete your order details below</p>
+    <input type="hidden" id="selectedProduct">
+    <input type="hidden" id="selectedSize">
+    <div class="form-group"><label>Your Full Name</label><input type="text" id="orderName" placeholder="e.g. Rahim Uddin"></div>
+    <div class="form-group"><label>Phone Number</label><input type="tel" id="orderPhone" placeholder="01XXXXXXXXX"></div>
+    <div class="form-group"><label>Delivery Address</label><textarea id="orderAddress" rows="2" style="width:100%;padding:12px 16px;background:var(--white);border:1.5px solid rgba(10,10,10,0.15);font-family:Outfit,sans-serif;font-size:0.95rem;color:var(--ink);outline:none;resize:none;" placeholder="Full delivery address..."></textarea></div>
+    <div class="form-group">
+      <label>Select Size</label>
+      <div class="size-grid" id="sizeGrid">
+        <button class="size-btn" onclick="selectSize(this,'XS')">XS</button>
+        <button class="size-btn" onclick="selectSize(this,'S')">S</button>
+        <button class="size-btn" onclick="selectSize(this,'M')">M</button>
+        <button class="size-btn" onclick="selectSize(this,'L')">L</button>
+        <button class="size-btn" onclick="selectSize(this,'XL')">XL</button>
+        <button class="size-btn" onclick="selectSize(this,'XXL')">XXL</button>
+      </div>
+    </div>
+    <div class="form-group"><label>Quantity</label><input type="number" id="orderQty" value="1" min="1" max="10"></div>
+    <button class="submit-order" onclick="submitOrder()">Confirm Order →</button>
+  </div>
+</div>
+
+<!-- ═══════ CART MODAL ═══════ -->
+<div class="modal-overlay" id="cartModal">
+  <div class="cart-modal">
+    <button class="modal-close" id="closeCartModal" style="color:var(--cream);">✕</button>
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <div id="cartFooter"></div>
+  </div>
+</div>
+
+<!-- ═══════ ADMIN LOGIN MODAL ═══════ -->
+<div class="modal-overlay" id="adminLoginModal">
+  <div class="modal" style="max-width:400px;">
+    <button class="modal-close" id="closeAdminLoginModal">✕</button>
+    <h2>Admin Access</h2>
+    <p class="subtitle">Enter password to continue</p>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="adminPassword" placeholder="Enter admin password" onkeydown="if(event.key==='Enter')checkAdmin()">
+    </div>
+    <p style="font-size:0.75rem;opacity:0.4;margin-bottom:16px;">Hint: <em>shafwans2026</em></p>
+    <button class="submit-order" onclick="checkAdmin()">Access Panel →</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     ADMIN PANEL — FULL SCREEN OVERLAY
+═══════════════════════════════════════════════ -->
+<div id="adminPanel">
+
+  <!-- SIDEBAR -->
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-logo">
+      <div class="wordmark">Shafwan<span>'s</span></div>
+      <div class="badge">Admin Panel</div>
+    </div>
+    <nav class="admin-nav">
+      <div class="admin-nav-section">Overview</div>
+      <a class="admin-nav-item active" onclick="showAdminView('dashboard',this)">
+        <span class="nav-icon">◈</span> Dashboard
+      </a>
+      <div class="admin-nav-section">Store</div>
+      <a class="admin-nav-item" onclick="showAdminView('orders',this)">
+        <span class="nav-icon">◎</span> Orders <span class="nav-badge" id="sidebarNewOrders">0</span>
+      </a>
+      <a class="admin-nav-item" onclick="showAdminView('products',this)">
+        <span class="nav-icon">◧</span> Products
+      </a>
+      <a class="admin-nav-item" onclick="showAdminView('discounts',this)">
+        <span class="nav-icon">◉</span> Discounts
+      </a>
+      <a class="admin-nav-item" onclick="showAdminView('categories',this)">
+        <span class="nav-icon">◫</span> Categories
+      </a>
+    </nav>
+    <div class="admin-sidebar-footer">
+      <button class="admin-close-btn" onclick="closeAdmin()">← Exit Panel</button>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div id="adminTopbarTitle" class="admin-topbar-title">Dashboard <em>Overview</em></div>
+      <div class="admin-live-dot">Live</div>
+    </div>
+    <div class="admin-content">
+
+      <!-- ── DASHBOARD VIEW ── -->
+      <div class="admin-view active" id="view-dashboard">
+        <div class="admin-stats-grid" id="dashStats"></div>
+        <div class="admin-section-head">
+          <div class="admin-section-title">Recent <em>Orders</em></div>
+          <button class="admin-btn admin-btn-ghost" onclick="showAdminView('orders',document.querySelector('[onclick*=\"orders\"]'))">View All</button>
+        </div>
+        <div class="admin-table-wrap">
+          <table class="admin-table" id="dashRecentOrders">
+            <thead><tr><th>Order ID</th><th>Customer</th><th>Product</th><th>Total</th><th>Status</th><th>Date</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── ORDERS VIEW ── -->
+      <div class="admin-view" id="view-orders">
+        <div class="admin-section-head">
+          <div class="admin-section-title">All <em>Orders</em></div>
+          <button class="admin-btn admin-btn-danger" onclick="clearAllOrders()">Clear All</button>
+        </div>
+        <div class="admin-table-wrap">
+          <table class="admin-table" id="ordersTable">
+            <thead><tr><th>Order ID</th><th>Customer</th><th>Phone</th><th>Product</th><th>Size</th><th>Qty</th><th>Total</th><th>Address</th><th>Date</th><th>Status</th><th></th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── PRODUCTS VIEW ── -->
+      <div class="admin-view" id="view-products">
+        <div class="admin-section-head">
+          <div class="admin-section-title">Product <em>Catalogue</em></div>
+          <button class="admin-btn admin-btn-primary" onclick="openProductModal()">+ Add Product</button>
+        </div>
+        <div class="products-admin-grid" id="productsAdminGrid"></div>
+      </div>
+
+      <!-- ── DISCOUNTS VIEW ── -->
+      <div class="admin-view" id="view-discounts">
+        <div class="discount-panel">
+          <div class="discount-panel-title">Discount Engine</div>
+          <div class="discount-panel-sub">Apply percentage discounts to individual products or entire categories. Prices update instantly on the storefront.</div>
+          <div class="discount-controls">
+            <div class="admin-input-group">
+              <label>Apply To</label>
+              <select class="admin-select" id="discountTarget">
+                <option value="all">All Products</option>
+              </select>
+            </div>
+            <div class="admin-input-group">
+              <label>Discount %</label>
+              <input class="admin-input" type="number" id="discountPct" placeholder="e.g. 20" min="1" max="90">
+            </div>
+            <div class="admin-input-group">
+              <label>Label (optional)</label>
+              <input class="admin-input" type="text" id="discountLabel" placeholder="e.g. Summer Sale">
+            </div>
+            <button class="admin-btn admin-btn-gold" onclick="applyDiscount()" style="height:44px;align-self:end;">Apply →</button>
+          </div>
+          <div class="active-discounts" id="activeDiscounts">
+            <div class="active-discounts-title">Active Discounts</div>
+            <div id="discountTagsWrap"><div class="no-discounts">No active discounts</div></div>
+          </div>
+        </div>
+        <div class="admin-section-head">
+          <div class="admin-section-title">Price <em>Preview</em></div>
+        </div>
+        <div class="admin-table-wrap">
+          <table class="admin-table" id="discountPreviewTable">
+            <thead><tr><th>Product</th><th>Category</th><th>Original Price</th><th>Discount</th><th>Final Price</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── CATEGORIES VIEW ── -->
+      <div class="admin-view" id="view-categories">
+        <div class="admin-section-head">
+          <div class="admin-section-title">Category <em>Manager</em></div>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+        <div class="admin-section-head" style="margin-top:16px;">
+          <div class="admin-section-title" style="font-size:1.1rem;">Add New <em>Category</em></div>
+        </div>
+        <div class="add-category-form">
+          <div class="admin-input-group">
+            <label>Category Name</label>
+            <input class="admin-input" type="text" id="newCatName" placeholder="e.g. Shoes, Perfume, Accessories">
+          </div>
+          <div class="admin-input-group">
+            <label>Icon (emoji)</label>
+            <input class="admin-input" type="text" id="newCatIcon" placeholder="👟" style="width:80px;">
+          </div>
+          <button class="admin-btn admin-btn-primary" onclick="addCategory()" style="height:44px;align-self:end;">+ Add Category</button>
+        </div>
+      </div>
+
+    </div><!-- /admin-content -->
+  </main><!-- /admin-main -->
+
+  <!-- ADD / EDIT PRODUCT MODAL -->
+  <div class="admin-modal-overlay" id="productModal">
+    <div class="admin-modal">
+      <button class="admin-modal-close" onclick="closeProductModal()">✕</button>
+      <h3 id="productModalTitle">Add New Product</h3>
+      <div class="sub" id="productModalSub">Fill in the details below</div>
+      <input type="hidden" id="editingProductId">
+
+      <div class="admin-input-group" style="margin-bottom:16px;">
+        <label>Product Image</label>
+        <div class="image-upload-zone" id="imageUploadZone">
+          <input type="file" accept="image/*" onchange="previewImage(this)">
+          <div class="upload-icon">🖼</div>
+          <p>Drag & drop or <span>click to upload</span></p>
+          <p style="font-size:0.73rem;margin-top:4px;">PNG, JPG, WEBP — max 5MB</p>
+          <img class="image-preview" id="imagePreview" src="" alt="">
+        </div>
+        <input type="hidden" id="productImageData">
+      </div>
+
+      <div class="admin-form-grid">
+        <div class="admin-input-group">
+          <label>Product Name</label>
+          <input class="admin-input" type="text" id="prodName" placeholder="e.g. Shadow Drop">
+        </div>
+        <div class="admin-input-group">
+          <label>Category</label>
+          <select class="admin-select" id="prodCategory"></select>
+        </div>
+      </div>
+      <div class="admin-form-grid full" style="margin-bottom:16px;">
+        <div class="admin-input-group">
+          <label>Tagline</label>
+          <input class="admin-input" type="text" id="prodTagline" placeholder="A short punchy description">
+        </div>
+      </div>
+      <div class="admin-form-grid">
+        <div class="admin-input-group">
+          <label>Price (৳)</label>
+          <input class="admin-input" type="number" id="prodPrice" placeholder="799">
+        </div>
+        <div class="admin-input-group">
+          <label>Badge (optional)</label>
+          <input class="admin-input" type="text" id="prodBadge" placeholder="e.g. New, Bestseller">
+        </div>
+      </div>
+      <div class="admin-color-row" style="margin-bottom:16px;">
+        <div class="admin-input-group">
+          <label>Base Color</label>
+          <input class="admin-input" type="color" id="prodColor1" value="#1a1a2e" style="padding:4px;height:44px;cursor:none;">
+        </div>
+        <div class="admin-input-group">
+          <label>Accent Color</label>
+          <input class="admin-input" type="color" id="prodColor2" value="#c94b2a" style="padding:4px;height:44px;cursor:none;">
+        </div>
+        <div class="admin-input-group">
+          <label>Text Color</label>
+          <input class="admin-input" type="color" id="prodAccent" value="#d4a843" style="padding:4px;height:44px;cursor:none;">
+        </div>
+      </div>
+      <button class="admin-btn admin-btn-primary" style="width:100%;justify-content:center;padding:14px;" onclick="saveProduct()">Save Product →</button>
+    </div>
+  </div>
+
+</div><!-- /adminPanel -->
+
+<script>
+// ═══════════════════════════════════════════
+// DATA LAYER
+// ═══════════════════════════════════════════
+let categories = JSON.parse(localStorage.getItem('sw_categories') || 'null') || [
+  { id:'tshirt', name:'T-Shirts', icon:'👕' },
+  { id:'hoodie', name:'Hoodies', icon:'🧥' },
+];
+let products = JSON.parse(localStorage.getItem('sw_products') || 'null') || [
+  { id:1, name:"Shadow Drop", tagline:"Darkness never looked this good", price:799, badge:"Bestseller", color1:"#1a1a2e", color2:"#c94b2a", accent:"#d4a843", categoryId:'tshirt', image:'' },
+  { id:2, name:"Desert Storm", tagline:"Born in the sand, built for the city", price:849, badge:"New", color1:"#5c4033", color2:"#d4a843", accent:"#f5f0e8", categoryId:'tshirt', image:'' },
+  { id:3, name:"Ivory Rebel", tagline:"Clean lines, bold statement", price:749, badge:null, color1:"#2a2520", color2:"#f5f0e8", accent:"#c94b2a", categoryId:'tshirt', image:'' },
+  { id:4, name:"Midnight Ink", tagline:"The city never sleeps, neither do you", price:899, badge:"Limited", color1:"#0a0a14", color2:"#4a90d9", accent:"#f5f0e8", categoryId:'tshirt', image:'' },
+  { id:5, name:"Terra Firma", tagline:"Grounded. Raw. Real.", price:799, badge:null, color1:"#3d2b1f", color2:"#8b6340", accent:"#d4a843", categoryId:'tshirt', image:'' },
+  { id:6, name:"Flame Script", tagline:"Let your words burn bright", price:949, badge:"Hot 🔥", color1:"#1a0a00", color2:"#ff5722", accent:"#ffc107", categoryId:'tshirt', image:'' },
+];
+let discounts = JSON.parse(localStorage.getItem('sw_discounts') || '[]');
+let orders = JSON.parse(localStorage.getItem('sw_orders') || '[]');
+let cart = [];
+let activeCategoryFilter = 'all';
+
+function saveData() {
+  localStorage.setItem('sw_categories', JSON.stringify(categories));
+  localStorage.setItem('sw_products', JSON.stringify(products));
+  localStorage.setItem('sw_discounts', JSON.stringify(discounts));
+  localStorage.setItem('sw_orders', JSON.stringify(orders));
+}
+
+function getEffectivePrice(product) {
+  let best = 0;
+  discounts.forEach(d => {
+    if (d.target === 'all' || d.target === product.categoryId || d.target === String(product.id)) {
+      if (d.pct > best) best = d.pct;
+    }
+  });
+  if (best === 0) return { final: product.price, original: null, pct: 0 };
+  return { final: Math.round(product.price * (1 - best/100)), original: product.price, pct: best };
+}
+
+// ═══════════════════════════════════════════
+// CURSOR
+// ═══════════════════════════════════════════
+const cursor = document.getElementById('cursor');
+const trail = document.getElementById('cursorTrail');
+let mx=0, my=0, tx=0, ty=0;
+document.addEventListener('mousemove', e => {
+  mx=e.clientX; my=e.clientY;
+  cursor.style.left=mx-6+'px'; cursor.style.top=my-6+'px';
+});
+function animateTrail() {
+  tx+=(mx-tx)*0.12; ty+=(my-ty)*0.12;
+  trail.style.left=tx-18+'px'; trail.style.top=ty-18+'px';
+  requestAnimationFrame(animateTrail);
+}
+animateTrail();
+document.querySelectorAll('a,button,[onclick]').forEach(el=>{
+  el.addEventListener('mouseenter',()=>cursor.classList.add('hover'));
+  el.addEventListener('mouseleave',()=>cursor.classList.remove('hover'));
+});
+
+// ═══════════════════════════════════════════
+// SCROLL REVEAL
+// ═══════════════════════════════════════════
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);} });
+}, {threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// ═══════════════════════════════════════════
+// STOREFRONT — CATEGORIES
+// ═══════════════════════════════════════════
+function renderCategoryTabs() {
+  const tabs = document.getElementById('categoryTabs');
+  const all = [{id:'all',name:'All',icon:'✦'},...categories];
+  tabs.innerHTML = all.map(c=>`
+    <button class="cat-tab ${c.id===activeCategoryFilter?'active':''}"
+      onclick="filterCategory('${c.id}',this)">${c.icon||''} ${c.name}</button>
+  `).join('');
+}
+function filterCategory(id, btn) {
+  activeCategoryFilter = id;
+  document.querySelectorAll('.cat-tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  renderProducts();
+}
+
+// ═══════════════════════════════════════════
+// STOREFRONT — PRODUCTS
+// ═══════════════════════════════════════════
+function renderProducts() {
+  const grid = document.getElementById('productsGrid');
+  let filtered = activeCategoryFilter==='all' ? products : products.filter(p=>p.categoryId===activeCategoryFilter);
+  if(filtered.length===0){
+    grid.innerHTML='<div style="grid-column:1/-1;padding:80px;text-align:center;opacity:0.4;font-family:Playfair Display,serif;font-style:italic;font-size:1.3rem;color:var(--ink);">No products in this category yet.</div>';
+    return;
+  }
+  grid.innerHTML = filtered.map(p => {
+    const cat = categories.find(c=>c.id===p.categoryId);
+    const ep = getEffectivePrice(p);
+    return `
+    <div class="product-card reveal">
+      <div class="product-img" style="${p.image?'':'background:linear-gradient(145deg,'+p.color1+' 0%,'+p.color1+'dd 100%);'}">
+        ${p.badge?`<div class="product-badge">${p.badge}</div>`:''}
+        ${ep.pct?`<div class="discount-badge">-${ep.pct}%</div>`:''}
+        ${p.image
+          ? `<img src="${p.image}" alt="${p.name}">`
+          : `<div class="tshirt-visual">
+              <svg viewBox="0 0 200 230" width="160" height="184" fill="none">
+                <path d="M60 10 L0 52 L30 67 L30 220 L170 220 L170 67 L200 52 L140 10 L120 32 C120 44 80 44 80 32 Z" fill="${p.color1}" stroke="${p.color2}" stroke-width="1.5"/>
+                <text x="100" y="145" text-anchor="middle" fill="${p.accent}" font-family="Playfair Display,serif" font-size="13" font-style="italic" font-weight="700">Shafwan's</text>
+                <circle cx="100" cy="118" r="22" fill="none" stroke="${p.color2}" stroke-width="1.5"/>
+                <text x="100" y="123" text-anchor="middle" fill="${p.color2}" font-family="Space Mono,monospace" font-size="10" font-weight="700">S</text>
+              </svg>
+            </div>`
+        }
+      </div>
+      <div class="product-info">
+        ${cat?`<div class="product-category-label">${cat.icon||''} ${cat.name}</div>`:''}
+        <div class="product-name">${p.name}</div>
+        <div class="product-tagline">${p.tagline}</div>
+        <div class="product-footer">
+          <div class="product-price-wrap">
+            <div class="product-price">৳${ep.final}</div>
+            ${ep.original?`<div class="product-price-original">৳${ep.original}</div>`:''}
+          </div>
+          <button class="add-to-cart-btn" onclick="openOrderModal(${p.id})">Order Now</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+}
+
+// ═══════════════════════════════════════════
+// ORDER MODAL
+// ═══════════════════════════════════════════
+function openOrderModal(productId) {
+  const p = products.find(x=>x.id===productId);
+  const ep = getEffectivePrice(p);
+  document.getElementById('selectedProduct').value = productId;
+  document.getElementById('selectedSize').value = '';
+  document.getElementById('orderModalSubtitle').textContent = `Ordering: ${p.name} — ৳${ep.final}`;
+  document.querySelectorAll('.size-btn').forEach(b=>b.classList.remove('active'));
+  ['orderName','orderPhone','orderAddress'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('orderQty').value=1;
+  document.getElementById('orderModal').classList.add('open');
+}
+function selectSize(btn,size) {
+  document.querySelectorAll('.size-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('selectedSize').value=size;
+}
+function submitOrder() {
+  const name=document.getElementById('orderName').value.trim();
+  const phone=document.getElementById('orderPhone').value.trim();
+  const address=document.getElementById('orderAddress').value.trim();
+  const size=document.getElementById('selectedSize').value;
+  const productId=parseInt(document.getElementById('selectedProduct').value);
+  const qty=parseInt(document.getElementById('orderQty').value)||1;
+  const product=products.find(x=>x.id===productId);
+  const ep=getEffectivePrice(product);
+  if(!name||!phone||!address){showToast('⚠ Please fill all fields');return;}
+  if(!size){showToast('⚠ Please select a size');return;}
+  const order={
+    id:'ORD-'+Date.now().toString().slice(-6),
+    name,phone,address,
+    product:product.name,productId,
+    price:ep.final,size,qty,
+    total:ep.final*qty,
+    status:'New',
+    date:new Date().toLocaleDateString('en-GB')
+  };
+  orders.unshift(order);
+  saveData();
+  document.getElementById('orderModal').classList.remove('open');
+  showToast('✓ Order placed! We will contact you soon.');
+}
+
+// ═══════════════════════════════════════════
+// CART
+// ═══════════════════════════════════════════
+document.getElementById('cartBtn').addEventListener('click',()=>{renderCart();document.getElementById('cartModal').classList.add('open');});
+function renderCart() {
+  const items=document.getElementById('cartItems');
+  const footer=document.getElementById('cartFooter');
+  if(cart.length===0){items.innerHTML='<div class="cart-empty">Your cart is empty</div>';footer.innerHTML='';return;}
+  let total=0;
+  items.innerHTML=cart.map(item=>{total+=item.price*item.qty;return`<div class="cart-item"><div><div class="cart-item-name">${item.name}</div><div class="cart-item-details">Size:${item.size}·Qty:${item.qty}</div></div><div class="cart-item-price">৳${item.price*item.qty}</div></div>`;}).join('');
+  footer.innerHTML=`<div class="cart-total"><span>Total</span><span>৳${total}</span></div><button class="checkout-btn" onclick="checkoutCart()">Checkout →</button>`;
+}
+function checkoutCart(){document.getElementById('cartModal').classList.remove('open');if(cart.length>0)openOrderModal(cart[0].id);}
+document.getElementById('closeCartModal').onclick=()=>document.getElementById('cartModal').classList.remove('open');
+
+// ═══════════════════════════════════════════
+// ADMIN LOGIN
+// ═══════════════════════════════════════════
+document.getElementById('adminLink').addEventListener('click',e=>{e.preventDefault();document.getElementById('adminLoginModal').classList.add('open');});
+document.getElementById('closeAdminLoginModal').onclick=()=>document.getElementById('adminLoginModal').classList.remove('open');
+document.getElementById('closeOrderModal').onclick=()=>document.getElementById('orderModal').classList.remove('open');
+
+function checkAdmin() {
+  if(document.getElementById('adminPassword').value==='shafwans2026'){
+    document.getElementById('adminLoginModal').classList.remove('open');
+    document.getElementById('adminPassword').value='';
+    openAdmin();
+  } else { showToast('✕ Wrong password'); }
+}
+
+// ═══════════════════════════════════════════
+// ADMIN PANEL LOGIC
+// ═══════════════════════════════════════════
+function openAdmin() {
+  document.getElementById('adminPanel').classList.add('open');
+  renderAdminDashboard();
+  renderAdminOrders();
+  renderAdminProducts();
+  renderAdminDiscounts();
+  renderAdminCategories();
+  updateSidebarBadge();
+}
+function closeAdmin() {
+  document.getElementById('adminPanel').classList.remove('open');
+  renderCategoryTabs();
+  renderProducts();
+}
+
+function showAdminView(view, el) {
+  document.querySelectorAll('.admin-view').forEach(v=>v.classList.remove('active'));
+  document.querySelectorAll('.admin-nav-item').forEach(n=>n.classList.remove('active'));
+  document.getElementById('view-'+view).classList.add('active');
+  if(el){el.classList.add('active');}
+  const titles = {dashboard:'Dashboard <em>Overview</em>',orders:'All <em>Orders</em>',products:'Product <em>Catalogue</em>',discounts:'Discount <em>Engine</em>',categories:'Category <em>Manager</em>'};
+  document.getElementById('adminTopbarTitle').innerHTML = titles[view]||view;
+}
+
+function updateSidebarBadge() {
+  const n = orders.filter(o=>o.status==='New').length;
+  document.getElementById('sidebarNewOrders').textContent = n;
+}
+
+// DASHBOARD
+function renderAdminDashboard() {
+  const totalRev = orders.reduce((s,o)=>s+o.total,0);
+  const newOrd = orders.filter(o=>o.status==='New').length;
+  const shipped = orders.filter(o=>o.status==='Shipped').length;
+  document.getElementById('dashStats').innerHTML = `
+    <div class="stat-card red"><div class="stat-card-label">Total Orders</div><div class="stat-card-value">${orders.length}</div><div class="stat-card-sub">All time</div></div>
+    <div class="stat-card gold"><div class="stat-card-label">Revenue</div><div class="stat-card-value">৳${totalRev.toLocaleString()}</div><div class="stat-card-sub">Gross</div></div>
+    <div class="stat-card green"><div class="stat-card-label">New Orders</div><div class="stat-card-value">${newOrd}</div><div class="stat-card-sub">Pending action</div></div>
+    <div class="stat-card blue"><div class="stat-card-label">Shipped</div><div class="stat-card-value">${shipped}</div><div class="stat-card-sub">Fulfilled</div></div>
+  `;
+  const tbody = document.querySelector('#dashRecentOrders tbody');
+  const recent = orders.slice(0,6);
+  tbody.innerHTML = recent.length===0
+    ? `<tr><td colspan="6" style="text-align:center;padding:40px;opacity:0.3;font-style:italic;">No orders yet</td></tr>`
+    : recent.map(o=>`
+      <tr>
+        <td class="mono" style="color:var(--admin-gold);">${o.id}</td>
+        <td>${o.name}</td>
+        <td>${o.product}</td>
+        <td class="mono" style="color:var(--admin-gold);font-weight:700;">৳${o.total}</td>
+        <td><span class="status-pill status-${o.status.toLowerCase()}">${o.status}</span></td>
+        <td style="opacity:0.5;">${o.date}</td>
+      </tr>`).join('');
+}
+
+// ORDERS
+function renderAdminOrders() {
+  const tbody = document.querySelector('#ordersTable tbody');
+  tbody.innerHTML = orders.length===0
+    ? `<tr><td colspan="11" style="text-align:center;padding:40px;opacity:0.3;font-style:italic;">No orders yet. Share your store!</td></tr>`
+    : orders.map((o,i)=>`
+      <tr>
+        <td class="mono" style="color:var(--admin-gold);">${o.id}</td>
+        <td style="font-weight:500;">${o.name}</td>
+        <td class="mono" style="opacity:0.6;">${o.phone}</td>
+        <td>${o.product}</td>
+        <td><span class="status-pill status-new">${o.size}</span></td>
+        <td style="text-align:center;">${o.qty}</td>
+        <td class="mono" style="color:var(--admin-gold);font-weight:700;">৳${o.total}</td>
+        <td style="max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;opacity:0.5;" title="${o.address}">${o.address}</td>
+        <td style="opacity:0.4;white-space:nowrap;">${o.date}</td>
+        <td>
+          <select class="status-select" onchange="updateOrderStatus(${i},this.value)">
+            <option value="New" ${o.status==='New'?'selected':''}>New</option>
+            <option value="Processing" ${o.status==='Processing'?'selected':''}>Processing</option>
+            <option value="Shipped" ${o.status==='Shipped'?'selected':''}>Shipped</option>
+          </select>
+        </td>
+        <td><button onclick="deleteOrder(${i})" style="background:none;border:none;color:rgba(255,255,255,0.2);cursor:none;font-size:1rem;transition:color 0.2s;" onmouseenter="this.style.color='#ff5555'" onmouseleave="this.style.color='rgba(255,255,255,0.2)'">✕</button></td>
+      </tr>`).join('');
+}
+function updateOrderStatus(i,status) {
+  orders[i].status=status;saveData();
+  renderAdminOrders();renderAdminDashboard();updateSidebarBadge();
+  showToast('✓ Status updated');
+}
+function deleteOrder(i) {
+  orders.splice(i,1);saveData();
+  renderAdminOrders();renderAdminDashboard();updateSidebarBadge();
+  showToast('Order removed');
+}
+function clearAllOrders() {
+  if(!confirm('Clear ALL orders? This cannot be undone.'))return;
+  orders=[];saveData();
+  renderAdminOrders();renderAdminDashboard();updateSidebarBadge();
+  showToast('All orders cleared');
+}
+
+// PRODUCTS ADMIN
+function renderAdminProducts() {
+  const grid = document.getElementById('productsAdminGrid');
+  if(products.length===0){grid.innerHTML='<div class="admin-empty">No products. Add your first one!</div>';return;}
+  grid.innerHTML = products.map(p=>{
+    const cat=categories.find(c=>c.id===p.categoryId);
+    const ep=getEffectivePrice(p);
+    return `
+    <div class="product-admin-card">
+      <div class="product-admin-preview" style="${p.image?'':'background:linear-gradient(145deg,'+p.color1+','+p.color1+'99);'}">
+        ${p.image?`<img src="${p.image}" alt="${p.name}">`:`
+          <svg viewBox="0 0 200 230" width="100" height="115" fill="none">
+            <path d="M60 10 L0 52 L30 67 L30 220 L170 220 L170 67 L200 52 L140 10 L120 32 C120 44 80 44 80 32 Z" fill="${p.color1}" stroke="${p.color2}" stroke-width="2"/>
+            <text x="100" y="150" text-anchor="middle" fill="${p.accent}" font-family="Playfair Display,serif" font-size="16" font-style="italic">S</text>
+          </svg>`}
+        ${p.badge?`<div style="position:absolute;top:8px;left:8px;background:var(--admin-rust);color:#fff;font-family:Space Mono,monospace;font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;padding:3px 8px;">${p.badge}</div>`:''}
+      </div>
+      <div class="product-admin-body">
+        <div class="product-admin-name">${p.name}</div>
+        <div class="product-admin-cat">${cat?cat.icon+' '+cat.name:'Uncategorized'}</div>
+        <div class="product-admin-prices">
+          <div class="product-admin-price">৳${ep.final}</div>
+          ${ep.original?`<div class="product-admin-original">৳${ep.original}</div><div class="product-admin-discount">-${ep.pct}%</div>`:''}
+        </div>
+        <div class="product-admin-actions">
+          <button class="btn-edit-product" onclick="openProductModal(${p.id})">✏ Edit</button>
+          <button class="btn-delete-product" onclick="deleteProduct(${p.id})">✕ Delete</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// PRODUCT MODAL
+function openProductModal(productId) {
+  const modal = document.getElementById('productModal');
+  const isEdit = productId!=null;
+  document.getElementById('productModalTitle').textContent = isEdit?'Edit Product':'Add New Product';
+  document.getElementById('productModalSub').textContent = isEdit?'Update product details':'Fill in the details below';
+  document.getElementById('editingProductId').value = isEdit?productId:'';
+
+  // Populate category dropdown
+  const sel = document.getElementById('prodCategory');
+  sel.innerHTML = categories.map(c=>`<option value="${c.id}">${c.icon} ${c.name}</option>`).join('');
+
+  if(isEdit) {
+    const p = products.find(x=>x.id===productId);
+    document.getElementById('prodName').value = p.name;
+    document.getElementById('prodTagline').value = p.tagline;
+    document.getElementById('prodPrice').value = p.price;
+    document.getElementById('prodBadge').value = p.badge||'';
+    document.getElementById('prodColor1').value = p.color1;
+    document.getElementById('prodColor2').value = p.color2;
+    document.getElementById('prodAccent').value = p.accent;
+    document.getElementById('prodCategory').value = p.categoryId;
+    document.getElementById('productImageData').value = p.image||'';
+    const preview = document.getElementById('imagePreview');
+    if(p.image){preview.src=p.image;preview.style.display='block';}
+    else{preview.style.display='none';}
+  } else {
+    ['prodName','prodTagline','prodBadge'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('prodPrice').value='';
+    document.getElementById('prodColor1').value='#1a1a2e';
+    document.getElementById('prodColor2').value='#c94b2a';
+    document.getElementById('prodAccent').value='#d4a843';
+    document.getElementById('productImageData').value='';
+    document.getElementById('imagePreview').style.display='none';
+  }
+  modal.classList.add('open');
+}
+function closeProductModal() { document.getElementById('productModal').classList.remove('open'); }
+
+function previewImage(input) {
+  const file = input.files[0];
+  if(!file)return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    const preview = document.getElementById('imagePreview');
+    preview.src = e.target.result;
+    preview.style.display = 'block';
+    document.getElementById('productImageData').value = e.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+
+function saveProduct() {
+  const name = document.getElementById('prodName').value.trim();
+  const price = parseInt(document.getElementById('prodPrice').value);
+  const tagline = document.getElementById('prodTagline').value.trim();
+  if(!name||!price){showToast('⚠ Name and price required');return;}
+  const data = {
+    name, tagline, price,
+    badge: document.getElementById('prodBadge').value.trim()||null,
+    color1: document.getElementById('prodColor1').value,
+    color2: document.getElementById('prodColor2').value,
+    accent: document.getElementById('prodAccent').value,
+    categoryId: document.getElementById('prodCategory').value,
+    image: document.getElementById('productImageData').value,
+  };
+  const editId = document.getElementById('editingProductId').value;
+  if(editId) {
+    const idx = products.findIndex(p=>p.id===parseInt(editId));
+    products[idx] = {...products[idx],...data};
+    showToast('✓ Product updated');
+  } else {
+    data.id = Date.now();
+    products.push(data);
+    showToast('✓ Product added');
+  }
+  saveData();
+  closeProductModal();
+  renderAdminProducts();
+  renderAdminDashboard();
+  renderDiscountPreview();
+}
+function deleteProduct(id) {
+  if(!confirm('Delete this product?'))return;
+  products=products.filter(p=>p.id!==id);saveData();
+  renderAdminProducts();renderAdminDashboard();renderDiscountPreview();showToast('Product removed');
+}
+
+// DISCOUNTS
+function renderAdminDiscounts() {
+  // Populate discount target
+  const sel = document.getElementById('discountTarget');
+  sel.innerHTML = `<option value="all">✦ All Products</option>`
+    + categories.map(c=>`<option value="${c.id}">${c.icon||''} Category: ${c.name}</option>`).join('')
+    + products.map(p=>`<option value="${p.id}">Product: ${p.name}</option>`).join('');
+  renderDiscountTags();
+  renderDiscountPreview();
+}
+function applyDiscount() {
+  const target = document.getElementById('discountTarget').value;
+  const pct = parseInt(document.getElementById('discountPct').value);
+  const label = document.getElementById('discountLabel').value.trim();
+  if(!pct||pct<1||pct>90){showToast('⚠ Enter a valid discount (1–90%)');return;}
+  // Remove existing discount for same target
+  discounts = discounts.filter(d=>d.target!==target);
+  discounts.push({target,pct,label});
+  saveData();
+  renderDiscountTags();
+  renderDiscountPreview();
+  renderAdminProducts();
+  renderProducts(); // update storefront live
+  document.getElementById('discountPct').value='';
+  document.getElementById('discountLabel').value='';
+  showToast(`✓ ${pct}% discount applied`);
+}
+function removeDiscount(i) {
+  discounts.splice(i,1);saveData();
+  renderDiscountTags();renderDiscountPreview();renderAdminProducts();renderProducts();
+  showToast('Discount removed');
+}
+function renderDiscountTags() {
+  const wrap = document.getElementById('discountTagsWrap');
+  if(discounts.length===0){wrap.innerHTML='<div class="no-discounts">No active discounts</div>';return;}
+  wrap.innerHTML = discounts.map((d,i)=>{
+    let label='';
+    if(d.target==='all') label='All Products';
+    else {
+      const cat=categories.find(c=>c.id===d.target);
+      if(cat) label=`${cat.icon||''} ${cat.name}`;
+      else { const p=products.find(p=>String(p.id)===String(d.target)); label=p?p.name:'Unknown'; }
+    }
+    return `<span class="discount-tag">${d.label?d.label+': ':''}<strong>${d.pct}%</strong> off ${label}<button onclick="removeDiscount(${i})">✕</button></span>`;
+  }).join('');
+}
+function renderDiscountPreview() {
+  const tbody = document.querySelector('#discountPreviewTable tbody');
+  tbody.innerHTML = products.map(p=>{
+    const ep=getEffectivePrice(p);
+    const cat=categories.find(c=>c.id===p.categoryId);
+    return `<tr>
+      <td style="font-weight:500;">${p.name}</td>
+      <td style="opacity:0.6;">${cat?cat.name:'—'}</td>
+      <td class="mono">৳${p.price}</td>
+      <td>${ep.pct?`<span class="status-pill" style="background:rgba(62,207,142,0.1);color:var(--admin-green);">-${ep.pct}%</span>`:'<span style="opacity:0.3;">—</span>'}</td>
+      <td class="mono" style="color:var(--admin-gold);font-weight:700;">৳${ep.final}</td>
+    </tr>`;
+  }).join('');
+}
+
+// CATEGORIES ADMIN
+function renderAdminCategories() {
+  const grid = document.getElementById('categoryGrid');
+  grid.innerHTML = categories.map((c,i)=>{
+    const count = products.filter(p=>p.categoryId===c.id).length;
+    return `
+    <div class="category-card">
+      <div class="category-icon">${c.icon||'📦'}</div>
+      <div class="category-info">
+        <div class="category-name">${c.name}</div>
+        <div class="category-count">${count} product${count!==1?'s':''}</div>
+      </div>
+      <div class="category-actions">
+        <button class="btn-cat-delete" onclick="deleteCategory('${c.id}')">✕</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+function addCategory() {
+  const name = document.getElementById('newCatName').value.trim();
+  const icon = document.getElementById('newCatIcon').value.trim();
+  if(!name){showToast('⚠ Category name required');return;}
+  const id = name.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'');
+  if(categories.find(c=>c.id===id)){showToast('⚠ Category already exists');return;}
+  categories.push({id,name,icon});
+  saveData();
+  renderAdminCategories();
+  renderAdminDiscounts();
+  renderCategoryTabs();
+  document.getElementById('newCatName').value='';
+  document.getElementById('newCatIcon').value='';
+  showToast(`✓ Category "${name}" added`);
+}
+function deleteCategory(id) {
+  if(!confirm('Delete this category? Products in it will become uncategorized.'))return;
+  categories=categories.filter(c=>c.id!==id);
+  products.forEach(p=>{ if(p.categoryId===id) p.categoryId=''; });
+  discounts=discounts.filter(d=>d.target!==id);
+  saveData();
+  renderAdminCategories();renderAdminDiscounts();renderCategoryTabs();renderProducts();
+  showToast('Category removed');
+}
+
+// TOAST
+function showToast(msg) {
+  document.querySelectorAll('.toast').forEach(t=>t.remove());
+  const t=document.createElement('div');
+  t.className='toast';t.textContent=msg;
+  document.body.appendChild(t);
+  setTimeout(()=>t.remove(),3200);
+}
+
+// CLOSE MODALS ON OVERLAY CLICK
+['orderModal','cartModal','adminLoginModal'].forEach(id=>{
+  document.getElementById(id).addEventListener('click',function(e){if(e.target===this)this.classList.remove('open');});
+});
+
+// INIT
+renderCategoryTabs();
+renderProducts();
+</script>
+</body>
+</html>
